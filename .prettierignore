@@ -1,5 +1,2 @@
 packages/**/*.d.ts
 packages/**/*.js
-react-app-env.d.ts
-serviceWorker.ts
-setupTests.ts

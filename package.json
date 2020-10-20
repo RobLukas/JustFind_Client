@@ -99,7 +99,7 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
-      "npx prettier --write 'src/**/*.{ts,tsx}'",
+      "prettier --write",
       "npm run lint:fix",
       "git add ."
     ]
