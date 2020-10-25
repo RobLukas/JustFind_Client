@@ -6,6 +6,7 @@ import lightMode from '../src/styles/theme/lightMode.ts';
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
+  layout: 'fullscreen',
 };
 
 const themes = [darkMode, lightMode];
