@@ -10,14 +10,14 @@ export default {
   component: OfferDetails,
 } as Meta;
 
-export const Template: Story<OfferDetailsProps> = (args: OfferDetailsProps) => (
+const Template: Story<OfferDetailsProps> = (args: OfferDetailsProps) => (
   <ThemeWrapper>
     <OfferDetails {...args} />
   </ThemeWrapper>
 );
 
-export const jsNewOfferTemplate = Template.bind({});
-jsNewOfferTemplate.args = {
+export const javascriptOffer = Template.bind({});
+javascriptOffer.args = {
   mainlyTechnology: 'JS',
   logoSrc:
     'https://bucket.justjoin.it/offers/company_logos/thumb/b4a0837f135fe43ab93209dbd8e4ce660cbd39b0.jpg?1576668518',
@@ -33,8 +33,8 @@ jsNewOfferTemplate.args = {
   createdAt: new Date(new Date().setDate(new Date().getDate() - 1)),
 };
 
-export const htmlOfferTemplate = Template.bind({});
-htmlOfferTemplate.args = {
+export const htmlOffer = Template.bind({});
+htmlOffer.args = {
   mainlyTechnology: 'Html',
   logoSrc:
     'https://bucket.justjoin.it/offers/company_logos/thumb/b4a0837f135fe43ab93209dbd8e4ce660cbd39b0.jpg?1576668518',
