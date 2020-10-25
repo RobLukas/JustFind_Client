@@ -11,6 +11,7 @@ const TileRoundedEdges = styled.span`
   margin-left: 6px;
   border-radius: 16px;
   text-transform: lowercase;
+  white-space: nowrap;
   padding: 4px 7px;
   text-overflow: ellipsis;
   overflow: hidden;

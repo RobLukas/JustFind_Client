@@ -1,6 +1,6 @@
-import TechnologyType from '@api/technologyCollection';
+import TechnologyType from './technologyCollection';
 
-interface OfferDetailsProps {
+interface Offers {
   mainlyTechnology: TechnologyType;
   logoSrc: string;
   title: string;
@@ -15,4 +15,4 @@ interface OfferDetailsProps {
   createdAt: Date;
 }
 
-export default OfferDetailsProps;
+export default Offers;

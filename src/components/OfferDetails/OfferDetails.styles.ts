@@ -57,11 +57,11 @@ const NewBar = styled.span(({ theme }) => ({
   '@media (max-width: 1020px)': {
     marginLeft: 'auto',
   },
-  marginLeft: 21,
   color: theme.styles.offers.newTitle.color,
   backgroundColor: theme.styles.offers.newTitle.background,
   padding: '4px 7px',
   borderRadius: 16,
+  marginLeft: 20,
   whiteSpace: 'nowrap',
   fontWeight: 400,
   verticalAlign: 'bottom',
@@ -82,7 +82,7 @@ const SeparateCompanyInfo = styled.div`
 `;
 
 const SeparateDateAgoFromSalary = styled.div`
-  margin-right: 16px;
+  margin-right: 21px;
 `;
 
 const TechnologyWrapper = styled.div`

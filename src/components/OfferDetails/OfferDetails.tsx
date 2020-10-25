@@ -19,9 +19,12 @@ const OfferDetails: FC<OfferDetailsProps> = ({
   companyName,
   companyAddress,
   technologies,
-  isNew,
-  addedDate,
+  createdAt,
 }: OfferDetailsProps) => {
+  const toFiveDaysIsNew = 5;
+  const timeDifferenceFromNow = new Date().getDate() - createdAt.getDate();
+  const isNew = timeDifferenceFromNow < toFiveDaysIsNew;
+
   return (
     <S.OfferDetails>
       <S.OfferDetailsWrapper>
@@ -39,7 +42,7 @@ const OfferDetails: FC<OfferDetailsProps> = ({
                 {isNew ? (
                   <S.NewBar>New</S.NewBar>
                 ) : (
-                  <TileRoundedEdges>{`${addedDate} ago`}</TileRoundedEdges>
+                  <TileRoundedEdges>{`${timeDifferenceFromNow} ago`}</TileRoundedEdges>
                 )}
               </S.SalaryWrapper>
             </S.TitleWrapper>

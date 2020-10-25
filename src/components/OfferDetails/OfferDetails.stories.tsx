@@ -2,17 +2,15 @@ import React from 'react';
 import { Meta, Story } from '@storybook/react/types-6-0';
 
 import OfferDetails from './OfferDetails';
-import IOfferDetailsProps from './OfferDetails.interface';
-import ThemeWrapper from '../ThemeWrapper/ThemeWrapper';
+import OfferDetailsProps from './OfferDetails.interface';
+import ThemeWrapper from '../../containers/ThemeWrapper/ThemeWrapper';
 
 export default {
   title: 'component/OfferDetails',
   component: OfferDetails,
 } as Meta;
 
-export const Template: Story<IOfferDetailsProps> = (
-  args: IOfferDetailsProps,
-) => (
+export const Template: Story<OfferDetailsProps> = (args: OfferDetailsProps) => (
   <ThemeWrapper>
     <OfferDetails {...args} />
   </ThemeWrapper>
@@ -32,8 +30,7 @@ jsNewOfferTemplate.args = {
   companyName: 'Sii',
   companyAddress: 'Grunwaldzka 20/3',
   technologies: ['react', 'es6', 'css'],
-  isNew: true,
-  addedDate: 2,
+  createdAt: new Date(new Date().setDate(new Date().getDate() - 1)),
 };
 
 export const htmlOfferTemplate = Template.bind({});
@@ -50,6 +47,5 @@ htmlOfferTemplate.args = {
   companyName: 'Goyello',
   companyAddress: 'Łódźka 2/13a',
   technologies: ['css', 'html5', 'web design'],
-  isNew: false,
-  addedDate: 13,
+  createdAt: new Date(new Date().setDate(new Date().getDate() - 8)),
 };
