@@ -3,13 +3,14 @@ import { v4 as uuid } from 'uuid';
 
 import OfferDetailsProps from './OfferDetails.interface';
 import LinearBackground from './LinearBackground/LinearBackground';
-import LogoCompany from './LogoCompany/LogoCompany';
-import Salary from './Salary/Salary';
+import LogoCompany from '../common/LogoCompany/LogoCompany';
+import Salary from '../common/Salary/Salary';
 import S from './OfferDetails.styles';
-import Title from './Title/Title';
+import JobTitle from '../common/JobTitle/JobTitle';
 import CompanyAddressInfo from './CompanyAddressInfo/CompanyAddressInfo';
 import { Business, Place } from '@material-ui/icons';
 import TileRoundedEdges from './TileRoundedEdges/TileRoundedEdges';
+import JobAdded from './JobAdded/JobAdded';
 
 const OfferDetails: FC<OfferDetailsProps> = ({
   mainlyTechnology,
@@ -21,10 +22,6 @@ const OfferDetails: FC<OfferDetailsProps> = ({
   technologies,
   createdAt,
 }: OfferDetailsProps) => {
-  const toFiveDaysIsNew = 5;
-  const timeDifferenceFromNow = new Date().getDate() - createdAt.getDate();
-  const isNew = timeDifferenceFromNow < toFiveDaysIsNew;
-
   return (
     <S.OfferDetails>
       <S.OfferDetailsWrapper>
@@ -35,15 +32,11 @@ const OfferDetails: FC<OfferDetailsProps> = ({
           </S.LogoCompanyWrapper>
           <S.DescriptionWrapper>
             <S.TitleWrapper>
-              <Title>{title}</Title>
+              <JobTitle>{title}</JobTitle>
               <S.SalaryWrapper>
                 <Salary salary={salary} />
                 <S.SeparateDateAgoFromSalary />
-                {isNew ? (
-                  <S.NewBar>New</S.NewBar>
-                ) : (
-                  <TileRoundedEdges>{`${timeDifferenceFromNow} ago`}</TileRoundedEdges>
-                )}
+                <JobAdded createdAt={createdAt} />
               </S.SalaryWrapper>
             </S.TitleWrapper>
             <S.AddressWrapper>

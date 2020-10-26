@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Title = styled.span(({ theme }) => ({
+const JobTitle = styled.span(({ theme }) => ({
   '@media (max-width: 1020px)': {
     whiteSpace: 'initial',
     overflow: 'initial',
@@ -17,5 +17,5 @@ const Title = styled.span(({ theme }) => ({
 }));
 
 export default {
-  Title,
+  JobTitle,
 };
