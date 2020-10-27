@@ -53,6 +53,15 @@
       "last 1 safari version"
     ]
   },
+  "jest": {
+    "moduleNameMapper": {
+      "^@api/(.*)$": "<rootDir>/src/api/$1",
+      "^@components/(.*)$": "<rootDir>/src/components/$1",
+      "^@containers/(.*)$": "<rootDir>/src/containers/$1",
+      "^@styles/(.*)$": "<rootDir>/src/styles/$1",
+      "^@utils/(.*)$": "<rootDir>/src/utils/$1"
+    }
+  },
   "devDependencies": {
     "@babel/core": "^7.12.3",
     "@storybook/addon-actions": "^6.0.27",
@@ -61,7 +70,6 @@
     "@storybook/node-logger": "^6.0.27",
     "@storybook/preset-create-react-app": "^3.1.4",
     "@storybook/react": "^6.0.27",
-    "@types/react-test-renderer": "^16.9.3",
     "@types/uuid": "^8.3.0",
     "@typescript-eslint/eslint-plugin": "^4.0.1",
     "@typescript-eslint/parser": "^4.0.1",
@@ -79,8 +87,8 @@
     "lint-staged": "^10.4.2",
     "prettier": "^2.1.2",
     "react-is": "^16.13.1",
-    "react-test-renderer": "^17.0.1",
     "storybook-addon-styled-component-theme": "^1.3.0",
+    "ts-jest": "^26.4.3",
     "tsconfig-paths-webpack-plugin": "^3.3.0"
   }
 }
