@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<JobAdded /> render correctly with New annotation 1`] = `
+<span
+  class="sc-bdnylx AGibd"
+>
+  New
+</span>
+`;
+
+exports[`<JobAdded /> render correctly with notify 5d ago 1`] = `
+<span
+  class="sc-gtssRu glfUpC"
+>
+  5d ago
+</span>
+`;

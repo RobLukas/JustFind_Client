@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<JobTitle /> renders correctly 1`] = `
+<span
+  class="sc-bdnylx OQzMl"
+>
+  job title
+</span>
+`;

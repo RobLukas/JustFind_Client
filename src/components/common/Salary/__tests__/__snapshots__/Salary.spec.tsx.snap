@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Salary /> renders correctly 1`] = `
+exports[`<Salary /> renders with salary props 1`] = `
 <span
-  className="sc-gtssRu ibqKak"
+  class="sc-gtssRu ibqKak"
 >
-  10000 - 20000 PLN
+  1000 - 2000 PLN
 </span>
 `;

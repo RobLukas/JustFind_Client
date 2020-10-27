@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CompanyAddressInfo /> render correctly 1`] = `
+<svg
+  aria-hidden="true"
+  class="MuiSvgIcon-root MuiSvgIcon-root sc-gtssRu lgkXBe"
+  focusable="false"
+  viewBox="0 0 24 24"
+/>
+`;

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NoJobOfferNotify /> render correctly 1`] = `
+<div
+  class="sc-bdnylx hARQLQ"
+>
+  <span
+    class="sc-gtssRu jvRCtO"
+  >
+    Sorry, there are no job offers.
+  </span>
+</div>
+`;
