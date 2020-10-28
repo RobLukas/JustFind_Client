@@ -1,8 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<JobTitle /> renders correctly 1`] = `
+.c0 {
+  color: #37474f;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  margin: 0 5px 0 0;
+  font-weight: 600;
+  line-height: 23px;
+}
+
+@media (max-width:1020px) {
+  .c0 {
+    white-space: initial;
+    overflow: initial;
+    text-overflow: initial;
+  }
+}
+
 <span
-  class="sc-bdnylx OQzMl"
+  class="c0"
 >
   job title
 </span>

@@ -1,18 +1,17 @@
 import React from 'react';
 import { cleanup, render } from '@testing-library/react';
-import 'jest-styled-components';
-import JobTitle from '../JobTitle';
-import JobTitleProps from '../JobTitle.interface';
 import { ThemeProvider } from 'styled-components';
-import lightMode from '@styles/theme/lightMode';
+import 'jest-styled-components';
 
-describe('<JobTitle />', () => {
+import lightMode from '@styles/theme/lightMode';
+import Header from '../Header';
+
+describe('<Header />', () => {
   afterEach(cleanup);
-  it('renders correctly', () => {
-    const { children }: JobTitleProps = { children: 'job title' };
+  it('render correctly', () => {
     const { container } = render(
       <ThemeProvider theme={lightMode}>
-        <JobTitle>{children}</JobTitle>
+        <Header />
       </ThemeProvider>,
     );
     expect(container.firstChild).toMatchSnapshot();

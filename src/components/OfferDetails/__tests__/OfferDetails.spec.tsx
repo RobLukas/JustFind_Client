@@ -1,5 +1,6 @@
 import lightMode from '@styles/theme/lightMode';
 import { cleanup, render } from '@testing-library/react';
+import 'jest-styled-components';
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import OfferDetails from '../OfferDetails';

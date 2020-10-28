@@ -1,18 +1,20 @@
 import React from 'react';
+import { ThemeProvider } from 'styled-components';
 import { cleanup, render } from '@testing-library/react';
 import 'jest-styled-components';
-import JobTitle from '../JobTitle';
-import JobTitleProps from '../JobTitle.interface';
-import { ThemeProvider } from 'styled-components';
-import lightMode from '@styles/theme/lightMode';
+import { SvgIcon } from '@material-ui/core';
 
-describe('<JobTitle />', () => {
+import lightMode from '@styles/theme/lightMode';
+import NavLink from '../NavLink';
+import NavLinkProps from '../NavLink.interface';
+
+describe('<NavLink />', () => {
   afterEach(cleanup);
-  it('renders correctly', () => {
-    const { children }: JobTitleProps = { children: 'job title' };
+  it('render correctly', () => {
+    const props: NavLinkProps = { icon: SvgIcon, desc: 'link desc', link: '/' };
     const { container } = render(
       <ThemeProvider theme={lightMode}>
-        <JobTitle>{children}</JobTitle>
+        <NavLink {...props} />
       </ThemeProvider>,
     );
     expect(container.firstChild).toMatchSnapshot();

@@ -1,5 +1,6 @@
 import React from 'react';
 import { cleanup, render } from '@testing-library/react';
+import 'jest-styled-components';
 import { ThemeProvider } from 'styled-components';
 
 import NoJobOfferNotify from '../NoJobOfferNotify';

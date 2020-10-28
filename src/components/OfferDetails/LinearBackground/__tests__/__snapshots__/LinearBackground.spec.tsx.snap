@@ -1,7 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<LinearBackground /> render correctly 1`] = `
+.c0 {
+  background: linear-gradient(30deg,#ffc706,#ffaf00);
+  width: 5px;
+  border-radius: 6px 0 0 6px;
+}
+
 <div
-  class="sc-bdnylx jpNXAy"
+  class="c0"
 />
 `;

@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> render correctly 1`] = `
+.c0 {
+  background: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  width: 160px;
+  height: 55px;
+}
+
+.c2 {
+  margin: 0 20px 0 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #99a1ab;
+}
+
+.c2:hover {
+  color: #ff4081;
+}
+
+.c2:hover .MuiSvgIcon-root {
+  fill: #ff4081;
+  -webkit-transition: unset;
+  transition: unset;
+}
+
+.c3 {
+  margin-right: 12px;
+}
+
+@media (min-width:1020px) {
+  .c0 {
+    height: 65px;
+  }
+}
+
+@media (min-width:1020px) {
+  .c1 {
+    margin: 0 25px 0 15px;
+  }
+}
+
+@media (max-width:1020px) {
+  .c2 {
+    display: none;
+  }
+}
+
+<header
+  class="c0"
+>
+  <img
+    alt="justfind.pl"
+    class="c1"
+    src="justfind-logo-dark.png"
+  />
+  <a
+    class="c2"
+    href="/"
+  >
+    <svg
+      aria-hidden="true"
+      class="MuiSvgIcon-root MuiSvgIcon-root c3"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M14 6V4h-4v2h4zM4 8v11h16V8H4zm16-2c1.11 0 2 .89 2 2v11c0 1.11-.89 2-2 2H4c-1.11 0-2-.89-2-2l.01-11c0-1.11.88-2 1.99-2h4V4c0-1.11.89-2 2-2h4c1.11 0 2 .89 2 2v2h4z"
+        fill-rule="evenodd"
+      />
+    </svg>
+    <span>
+      Job offers
+    </span>
+  </a>
+</header>
+`;

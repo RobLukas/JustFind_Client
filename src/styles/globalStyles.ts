@@ -19,6 +19,9 @@ const GlobalStyles = createGlobalStyle(({ theme }) => {
     '.MuiIconButton-root:hover': {
       backgroundColor: 'rgba(255, 255, 255, 0.08) !important',
     },
+    '.MuiSvgIcon-root': {
+      transition: 'unset',
+    },
     '.leaflet-container': {
       background: `${theme.styles.primary.background} !important`,
       height: '100%',

@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NavLink /> render correctly 1`] = `
+.c0 {
+  margin: 0 20px 0 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #99a1ab;
+}
+
+.c0:hover {
+  color: #ff4081;
+}
+
+.c0:hover .MuiSvgIcon-root {
+  fill: #ff4081;
+  -webkit-transition: unset;
+  transition: unset;
+}
+
+.c1 {
+  margin-right: 12px;
+}
+
+@media (max-width:1020px) {
+  .c0 {
+    display: none;
+  }
+}
+
+<a
+  class="c0"
+  href="/"
+>
+  <svg
+    aria-hidden="true"
+    class="MuiSvgIcon-root MuiSvgIcon-root c1"
+    focusable="false"
+    viewBox="0 0 24 24"
+  />
+  <span>
+    link desc
+  </span>
+</a>
+`;

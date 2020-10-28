@@ -1,8 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<TileRoundedEdges /> render correctly 1`] = `
+.c0 {
+  color: #37474f;
+  border: 1px solid #e0e0e0;
+  background-color: #fff;
+  display: inline-block;
+  margin-left: 6px;
+  border-radius: 16px;
+  text-transform: lowercase;
+  white-space: nowrap;
+  padding: 4px 7px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  min-width: 1ch;
+}
+
+@media (max-width:1020px) {
+  .c0 {
+    margin-left: auto;
+  }
+}
+
 <span
-  class="sc-bdnylx gXaVhD"
+  class="c0"
 >
   html
 </span>

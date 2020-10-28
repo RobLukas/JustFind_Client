@@ -1,6 +1,7 @@
 import React from 'react';
 import { SvgIcon } from '@material-ui/core';
 import { cleanup, render } from '@testing-library/react';
+import 'jest-styled-components';
 import { ThemeProvider } from 'styled-components';
 
 import CompanyAddressInfoProps from '../CompanyAddressInfo.interface';

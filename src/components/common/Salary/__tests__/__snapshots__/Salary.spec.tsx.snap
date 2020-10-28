@@ -1,8 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Salary /> renders with salary props 1`] = `
+.c0 {
+  color: #51b368;
+  vertical-align: middle;
+  text-align: right;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+@media (max-width:1020px) {
+  .c0 {
+    line-height: 11px;
+  }
+}
+
 <span
-  class="sc-gtssRu ibqKak"
+  class="c0"
 >
   1000 - 2000 PLN
 </span>

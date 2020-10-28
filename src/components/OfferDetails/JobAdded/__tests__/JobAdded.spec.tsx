@@ -1,5 +1,6 @@
 import React from 'react';
 import { cleanup, render } from '@testing-library/react';
+import 'jest-styled-components';
 
 import JobAddedProps from '../JobAdded.interface';
 import JobAdded from '../JobAdded';

@@ -1,11 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<NoJobOfferNotify /> render correctly 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  font-size: 14;
+  left: 0;
+  top: 0;
+  height: 70;
+  width: 100%;
+}
+
+.c1 {
+  color: #99a1ab;
+}
+
 <div
-  class="sc-bdnylx hARQLQ"
+  class="c0"
 >
   <span
-    class="sc-gtssRu jvRCtO"
+    class="c1"
   >
     Sorry, there are no job offers.
   </span>

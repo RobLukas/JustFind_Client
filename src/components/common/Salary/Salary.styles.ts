@@ -1,11 +1,5 @@
 import styled from 'styled-components';
 
-const SalaryWrapper = styled.div({
-  marginLeft: 'auto',
-  display: 'flex',
-  alignItems: 'center',
-});
-
 const TitleSalary = styled.span({
   '@media (max-width: 1020px)': {
     lineHeight: '11px',
@@ -18,6 +12,5 @@ const TitleSalary = styled.span({
 });
 
 export default {
-  SalaryWrapper,
   TitleSalary,
 };
