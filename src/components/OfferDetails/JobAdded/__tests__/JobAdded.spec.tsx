@@ -5,7 +5,7 @@ import 'jest-styled-components';
 import JobAddedProps from '../JobAdded.interface';
 import JobAdded from '../JobAdded';
 import { ThemeProvider } from 'styled-components';
-import lightMode from '@styles/theme/lightMode';
+import lightMode from 'styles/theme/lightMode';
 
 describe('<JobAdded />', () => {
   afterEach(cleanup);

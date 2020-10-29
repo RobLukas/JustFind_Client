@@ -1,4 +1,4 @@
-import calculateTimeDiffIsItNew from '@utils/calculateTimeDiffIsItNew';
+import calculateTimeDiffIsItNew from 'utils/calculateTimeDiffIsItNew';
 
 describe('calculateTimeDiffIsItNew', () => {
   it('should return isNew true and timeDifferenceFromNow 0 days', () => {

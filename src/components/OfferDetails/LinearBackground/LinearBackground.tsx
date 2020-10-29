@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import linearBackgroundTechCollection from '@styles/linearBackgroundTechEnum';
+import linearBackgroundTechCollection from 'styles/linearBackgroundTechEnum';
 import LinearBackgroundProps from './LinearBackground.interface';
 import S from './LinearBackground.styles';
 

@@ -4,7 +4,7 @@ import 'jest-styled-components';
 import { ThemeProvider } from 'styled-components';
 
 import NoJobOfferNotify from '../NoJobOfferNotify';
-import lightMode from '@styles/theme/lightMode';
+import lightMode from 'styles/theme/lightMode';
 
 describe('<NoJobOfferNotify />', () => {
   afterEach(cleanup);

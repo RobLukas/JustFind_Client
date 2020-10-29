@@ -6,7 +6,7 @@ import { ThemeProvider } from 'styled-components';
 
 import CompanyAddressInfoProps from '../CompanyAddressInfo.interface';
 import CompanyAddressInfo from '../CompanyAddressInfo';
-import lightMode from '@styles/theme/lightMode';
+import lightMode from 'styles/theme/lightMode';
 
 describe('<CompanyAddressInfo />', () => {
   afterEach(cleanup);

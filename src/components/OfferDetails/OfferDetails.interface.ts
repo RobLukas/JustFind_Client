@@ -1,4 +1,4 @@
-import TechnologyType from '@api/technologyCollection';
+import TechnologyType from 'api/technologyCollection';
 
 interface OfferDetailsProps {
   mainlyTechnology: TechnologyType;

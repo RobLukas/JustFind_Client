@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
+  position: relative;
   @media (min-width: 1020px) {
     overflow-y: scroll;
     width: 55%;

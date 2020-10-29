@@ -3,7 +3,7 @@ import { cleanup, render } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
 import 'jest-styled-components';
 
-import lightMode from '@styles/theme/lightMode';
+import lightMode from 'styles/theme/lightMode';
 import Header from '../Header';
 
 describe('<Header />', () => {

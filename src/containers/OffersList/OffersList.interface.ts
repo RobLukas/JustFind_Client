@@ -1,4 +1,4 @@
-import Offers from '@api/offers.interface';
+import Offers from 'api/offers.interface';
 
 interface OffersListProps {
   offers: Offers[];

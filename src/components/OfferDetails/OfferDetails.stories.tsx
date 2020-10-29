@@ -3,10 +3,10 @@ import { Meta, Story } from '@storybook/react/types-6-0';
 
 import OfferDetails from './OfferDetails';
 import OfferDetailsProps from './OfferDetails.interface';
-import ThemeWrapper from '@containers/ThemeWrapper/ThemeWrapper';
+import ThemeWrapper from 'containers/ThemeWrapper/ThemeWrapper';
 
 export default {
-  title: 'component/OfferDetails',
+  title: 'components/Offer/OfferDetails',
   component: OfferDetails,
 } as Meta;
 

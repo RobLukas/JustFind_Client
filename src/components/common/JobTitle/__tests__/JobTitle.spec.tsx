@@ -4,7 +4,7 @@ import 'jest-styled-components';
 import JobTitle from '../JobTitle';
 import JobTitleProps from '../JobTitle.interface';
 import { ThemeProvider } from 'styled-components';
-import lightMode from '@styles/theme/lightMode';
+import lightMode from 'styles/theme/lightMode';
 
 describe('<JobTitle />', () => {
   afterEach(cleanup);

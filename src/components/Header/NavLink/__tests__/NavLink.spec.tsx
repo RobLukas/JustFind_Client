@@ -4,7 +4,7 @@ import { cleanup, render } from '@testing-library/react';
 import 'jest-styled-components';
 import { SvgIcon } from '@material-ui/core';
 
-import lightMode from '@styles/theme/lightMode';
+import lightMode from 'styles/theme/lightMode';
 import NavLink from '../NavLink';
 import NavLinkProps from '../NavLink.interface';
 

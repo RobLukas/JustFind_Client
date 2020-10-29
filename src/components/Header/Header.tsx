@@ -1,10 +1,10 @@
 import React, { FC } from 'react';
 import { v4 as uuid } from 'uuid';
 
-import navLinks from '@api/headerNavLinks';
+import navLinks from 'api/headerNavLinks';
 import S from './Header.styles';
 import NavLink from './NavLink/NavLink';
-import { darkLogo } from '@assets/index';
+import { darkLogo } from 'assets/index';
 
 const Header: FC = () => {
   return (

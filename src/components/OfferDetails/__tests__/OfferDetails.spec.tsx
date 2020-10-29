@@ -1,4 +1,4 @@
-import lightMode from '@styles/theme/lightMode';
+import lightMode from 'styles/theme/lightMode';
 import { cleanup, render } from '@testing-library/react';
 import 'jest-styled-components';
 import React from 'react';
