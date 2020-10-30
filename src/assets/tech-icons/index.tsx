@@ -1,0 +1,11 @@
+export { default as dotNetIcon } from './net.png';
+export { default as htmlIcon } from './html.png';
+export { default as javaIcon } from './java.png';
+export { default as jsIcon } from './javascript.png';
+export { default as mobileIcon } from './mobile.png';
+export { default as phpIcon } from './php.png';
+export { default as cPlusPlusIcon } from './c.png';
+export { default as pythonIcon } from './python.png';
+export { default as testingIcon } from './testing.png';
+export { default as blockchainIcon } from './blockchain.png';
+export { default as dataIcon } from './data.png';

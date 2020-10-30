@@ -12,6 +12,7 @@ interface Offers {
   companyName: string;
   companyAddress: string;
   technologies: string[];
+  geoPosition: [number, number];
   createdAt: Date;
 }
 
