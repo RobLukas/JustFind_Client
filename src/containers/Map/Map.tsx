@@ -5,7 +5,7 @@ import { LatLngTuple } from 'leaflet';
 import { v4 as uuid } from 'uuid';
 
 import S from './Map.styles';
-import Marker from 'components/Map/Marker/Marker';
+import { MarkerMap } from 'components';
 import { darkModeMap } from 'styles/theme/mapMode';
 import offers from 'api/offers';
 
@@ -17,7 +17,7 @@ const Map: FC = () => {
         <S.MapLeaflet center={position} zoom={6} animate={true}>
           <TileLayer url={darkModeMap} />
           {offers.map((offer) => (
-            <Marker key={uuid()} {...offer} />
+            <MarkerMap key={uuid()} {...offer} />
           ))}
         </S.MapLeaflet>
       </S.MapWrapper>
