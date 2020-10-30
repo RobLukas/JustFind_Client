@@ -1,13 +1,13 @@
 import React, { FC } from 'react';
 import S from './PopupBox.styles';
-import PopupProps from 'api/offers.interface';
+import PopupBoxProps from 'api/offers.interface';
 
-const PopupBox: FC<PopupProps> = ({
+const PopupBox: FC<PopupBoxProps> = ({
   logoSrc,
   title,
   salary,
   companyName,
-}: PopupProps) => {
+}: PopupBoxProps) => {
   return (
     <S.PopupBox>
       <S.LogoWrapper>
