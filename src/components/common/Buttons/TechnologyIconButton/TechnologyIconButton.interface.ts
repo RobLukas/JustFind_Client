@@ -1,7 +1,7 @@
 import TechnologyType from 'api/technologyCategory';
 
-interface LinearBackgroundProps {
+interface TechnologyIconButtonProps {
   technology: TechnologyType;
 }
 
-export default LinearBackgroundProps;
+export default TechnologyIconButtonProps;

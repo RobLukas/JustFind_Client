@@ -1,4 +1,4 @@
-import TechnologyType from './technologyCollection';
+import TechnologyType from './technologyCategory';
 
 interface Offers {
   mainlyTechnology: TechnologyType;

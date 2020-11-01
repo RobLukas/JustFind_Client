@@ -1,0 +1,21 @@
+import React, { FC } from 'react';
+import Switch from '@material-ui/core/Switch';
+
+import S from './SwitchModeButton.styles';
+import SwitchModeButtonProps from './SwitchModeButton.interface';
+
+const SwitchModeButton: FC<SwitchModeButtonProps> = ({
+  checked,
+}: SwitchModeButtonProps) => {
+  return (
+    <S.SwitchModeButton>
+      <div>
+        <S.SunnyMuiIcon />
+        <Switch checked={checked} color={'default'} />
+        <S.BrightnessMuiIcon />
+      </div>
+    </S.SwitchModeButton>
+  );
+};
+
+export default SwitchModeButton;

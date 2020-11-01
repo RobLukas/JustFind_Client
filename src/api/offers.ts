@@ -1,5 +1,5 @@
 import Offers from './offers.interface';
-import { techCollection } from './technologyCollection';
+import { techCollection } from './technologyCategory';
 
 export default [...Array(30)].map(
   (): Offers => ({

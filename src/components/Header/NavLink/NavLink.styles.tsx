@@ -20,7 +20,9 @@ const NavLink = styled.a`
 `;
 
 const MuiIcon = styled(SvgIcon)`
-  margin-right: 12px;
+  &.MuiSvgIcon-root {
+    margin-right: 12px;
+  }
 ` as typeof SvgIcon;
 
 export default { NavLink, MuiIcon };

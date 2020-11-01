@@ -1,5 +1,6 @@
 import offers from 'api/offers';
 import { Header } from 'components';
+import Filters from 'containers/Filters/Filters';
 import Map from 'containers/Map/Map';
 import OffersList from 'containers/OffersList/OffersList';
 import ThemeWrapper from 'containers/ThemeWrapper/ThemeWrapper';
@@ -11,6 +12,7 @@ const Offers: FC = () => {
     <ThemeWrapper>
       <>
         <Header />
+        <Filters />
         <OffersList offers={offers} />
         <Map />
       </>
