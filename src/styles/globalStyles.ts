@@ -5,7 +5,7 @@ const GlobalStyles = createGlobalStyle(({ theme }) => {
     body: {
       margin: 0,
       padding: 0,
-      backgroundColor: theme.styles.primary.background,
+      background: theme.styles.primary.background,
       fontFamily: '"Open Sans", sans-serif',
       fontWeight: 300,
     },

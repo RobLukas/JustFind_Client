@@ -7,6 +7,8 @@
       "containers/*": ["containers/*"],
       "styles/*": ["styles/*"],
       "assets/*": ["assets/*"],
+      "features/*": ["features/*"],
+      "redux/*": ["redux/*"],
       "utils/*": ["utils/*"]
     }
   }

@@ -6,12 +6,17 @@ import SwitchModeButtonProps from './SwitchModeButton.interface';
 
 const SwitchModeButton: FC<SwitchModeButtonProps> = ({
   checked,
+  handleSwitchMode,
 }: SwitchModeButtonProps) => {
   return (
     <S.SwitchModeButton>
       <div>
         <S.SunnyMuiIcon />
-        <Switch checked={checked} color={'default'} />
+        <Switch
+          checked={checked}
+          color={'default'}
+          onChange={handleSwitchMode}
+        />
         <S.BrightnessMuiIcon />
       </div>
     </S.SwitchModeButton>
