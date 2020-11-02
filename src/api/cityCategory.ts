@@ -1,5 +1,4 @@
 export enum CityCategoryEnum {
-  All = 'All',
   Warszawa = 'Warszawa',
   Krakow = 'Kraków',
   Lodz = 'Łódz',
@@ -19,21 +18,20 @@ export enum CityCategoryEnum {
 }
 
 export const cityCategoryCollection = [
-  'All',
   'Warszawa',
-  'Krakow',
-  'Lodz',
-  'Wroclaw',
-  'Poznan',
-  'Gdansk',
+  'Kraków',
+  'Łódź',
+  'Wrocław',
+  'Poznań',
+  'Gdańsk',
   'Sopot',
   'Gdynia',
   'Szczecin',
   'Bydgoszcz',
   'Lublin',
-  'Bialystok',
+  'Białystok',
   'Katowice',
-  'Czestochowa',
+  'Częstochowa',
   'Olsztyn',
-  'ZielonaGora',
+  'Zielona Góra',
 ];

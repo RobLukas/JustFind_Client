@@ -1,34 +1,25 @@
 import React, { FC } from 'react';
 import { v4 as uuid } from 'uuid';
 
-import { CityCategoryEnum, cityCategoryCollection } from 'api/cityCategory';
-import DropDownDots from 'components/Filters/DesktopFilters/DropDowns/DropDownDots/DropDownDots';
+import { cityCategoryCollection } from 'api/cityCategory';
 import CategoryButton from 'components/common/Buttons/CategoryButton/CategoryButton';
-import S from 'components/Filters/DesktopFilters/DropDowns/DropDown.styles';
+import DropDownList from 'components/Filters/DesktopFilters/DropDowns/DropDownList/DropDownList';
+import { DotsButton } from 'components/common';
 
 const CityFilter: FC = () => {
   const limitButtons = 7;
   const dropDownButtonsFrom = limitButtons + 1;
 
-  const listOfCityButtons = cityCategoryCollection.slice(0, limitButtons);
-  const restOfButtons = cityCategoryCollection.slice(dropDownButtonsFrom);
+  const listOfCity = cityCategoryCollection.slice(0, limitButtons);
+  const restOfCities = cityCategoryCollection.slice(dropDownButtonsFrom);
 
   return (
     <>
-      {listOfCityButtons.map((city) => {
-        const cityName: CityCategoryEnum =
-          CityCategoryEnum[city as keyof typeof CityCategoryEnum];
-        return <CategoryButton key={uuid()}>{cityName}</CategoryButton>;
+      <CategoryButton>{'All'}</CategoryButton>
+      {listOfCity.map((city) => {
+        return <CategoryButton key={uuid()}>{city}</CategoryButton>;
       })}
-      <DropDownDots>
-        {restOfButtons.map((city) => {
-          const cityName: CityCategoryEnum =
-            CityCategoryEnum[city as keyof typeof CityCategoryEnum];
-          return (
-            <S.DropDownListItem key={uuid()}>{cityName}</S.DropDownListItem>
-          );
-        })}
-      </DropDownDots>
+      <DropDownList ButtonComponent={DotsButton} collection={restOfCities} />
     </>
   );
 };

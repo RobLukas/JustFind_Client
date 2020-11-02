@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const DropDownDots = styled.div`
+const DropDownList = styled.div`
   position: relative;
 `;
 
@@ -17,14 +17,29 @@ const ContentWrapper = styled.div`
 
 const ListWrapper = styled.ul`
   margin: 0;
-  min-width: 150px;
+  min-width: 100px;
   padding: 8px 0 8px 0;
   white-space: nowrap;
   line-height: 1.5;
 `;
 
+const ListItem = styled.li`
+  text-align: center;
+  justify-content: center;
+  font-size: 14px;
+  display: flex;
+  color: ${({ theme }) => theme.styles.filter.button.color};
+  cursor: pointer;
+  margin: 0;
+  padding: 7px 24px 7px 24px;
+  &:hover {
+    background: ${({ theme }) => theme.styles.dropdown.button.hover};
+  }
+`;
+
 export default {
-  DropDownDots,
+  DropDownList,
   ContentWrapper,
   ListWrapper,
+  ListItem,
 };
