@@ -13,7 +13,7 @@ describe('<JobAdded />', () => {
     const props: JobAddedProps = { createdAt: new Date() };
     const { container, getByText } = render(
       <ThemeProvider theme={lightMode}>
-        <JobAdded {...props}></JobAdded>
+        <JobAdded {...props} />
       </ThemeProvider>,
     );
     expect(getByText('New')).toBeTruthy();
@@ -26,7 +26,7 @@ describe('<JobAdded />', () => {
     const props: JobAddedProps = { createdAt: new Date(dateFiveDaysAgo) };
     const { container, getByText } = render(
       <ThemeProvider theme={lightMode}>
-        <JobAdded {...props}></JobAdded>
+        <JobAdded {...props} />
       </ThemeProvider>,
     );
     expect(getByText('5d ago')).toBeTruthy();

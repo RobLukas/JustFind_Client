@@ -43,7 +43,7 @@ exports[`<Header /> render correctly 1`] = `
   transition: unset;
 }
 
-.c3 {
+.c3.MuiSvgIcon-root {
   margin-right: 12px;
 }
 

@@ -4,11 +4,10 @@ import S from './JobAdded.styles';
 import TileRoundedEdges from '../TileRoundedEdges/TileRoundedEdges';
 import JobAddedProps from './JobAdded.interface';
 import calculateTimeDiff from 'utils/calculateTimeDiffIsItNew';
-// import calculateTimeDiff from '../../../utils/calculateTimeDiffIsItNew';
 
 const JobAdded: FC<JobAddedProps> = ({ createdAt }: JobAddedProps) => {
   const newUntilDays = 5;
-  const { isNew, timeDifferenceFromNow } = calculateTimeDiff(
+  const { isNew, timeDifferenceInDays } = calculateTimeDiff(
     createdAt,
     newUntilDays,
   );
@@ -18,7 +17,7 @@ const JobAdded: FC<JobAddedProps> = ({ createdAt }: JobAddedProps) => {
       {isNew ? (
         <S.NewBar>New</S.NewBar>
       ) : (
-        <TileRoundedEdges>{`${timeDifferenceFromNow}d ago`}</TileRoundedEdges>
+        <TileRoundedEdges>{`${timeDifferenceInDays}d ago`}</TileRoundedEdges>
       )}
     </>
   );

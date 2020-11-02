@@ -1,16 +1,19 @@
 interface CalculateTimeDiff {
   isNew: boolean;
-  timeDifferenceFromNow: number;
+  timeDifferenceInDays: number;
 }
 
 const calculateTimeDiffIsItNew = (
   createdAt: Date,
   newUntilDays: number,
 ): CalculateTimeDiff => {
-  const timeDifferenceFromNow = new Date().getDate() - createdAt.getDate();
-  const isNew = timeDifferenceFromNow < newUntilDays;
+  const timeDifferenceInMs = new Date().getTime() - createdAt.getTime();
+  const timeDifferenceInDays = Math.floor(
+    timeDifferenceInMs / (1000 * 60 * 60 * 24),
+  );
+  const isNew = timeDifferenceInDays < newUntilDays;
 
-  return { isNew, timeDifferenceFromNow };
+  return { isNew, timeDifferenceInDays };
 };
 
 export default calculateTimeDiffIsItNew;
