@@ -5,7 +5,7 @@ interface ThemeModeState {
   isDarkMode: boolean;
 }
 
-const initialState: ThemeModeState = {
+export const initialState: ThemeModeState = {
   isDarkMode: true,
 };
 
