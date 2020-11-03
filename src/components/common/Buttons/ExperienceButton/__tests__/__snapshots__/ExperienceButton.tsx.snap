@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ExperienceButton /> render correctly 1`] = `
+.c0 {
+  display: inline-block;
+  position: relative;
+}
+
+.c1 {
+  color: #777;
+  background: #fff;
+  margin-left: 0;
+  cursor: pointer;
+  padding: 0 7px 0 12px;
+  margin: 0;
+  box-shadow: none;
+  text-transform: none;
+  height: 35px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 0.8rem;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-align: center;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+  outline: 0;
+  border: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.c1.MuiSvgIcon-root {
+  fill: #777;
+}
+
+.c1:hover {
+  background-color: rgba(255,255,255,0.08);
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+.c3 {
+  vertical-align: super;
+  margin: 0 3px;
+}
+
+.c2.MuiSvgIcon-root {
+  font-size: 1.2rem;
+  line-height: inherit;
+}
+
+<div
+  class="c0"
+>
+  <button
+    class="c1"
+  >
+    <svg
+      aria-hidden="true"
+      class="MuiSvgIcon-root MuiSvgIcon-root c2"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"
+      />
+    </svg>
+    <span
+      class="c3"
+    >
+      Exp. level
+    </span>
+    <svg
+      aria-hidden="true"
+      class="MuiSvgIcon-root MuiSvgIcon-root c2"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+      />
+    </svg>
+  </button>
+</div>
+`;

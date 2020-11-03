@@ -4,6 +4,7 @@ const Select = styled.select`
   display: inherit;
   color: ${({ theme }) => theme.styles.primary.color};
   background: ${({ theme }) => theme.styles.secondary.background};
+  cursor: pointer;
   font-size: 18px;
   border-radius: 3px;
   padding: 15px;
