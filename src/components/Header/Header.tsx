@@ -4,12 +4,12 @@ import { v4 as uuid } from 'uuid';
 import navLinks from 'api/headerNavLinks';
 import S from './Header.styles';
 import NavLink from './NavLink/NavLink';
-import { darkLogo } from 'assets';
+import HeaderProps from './Header.interface';
 
-const Header: FC = () => {
+const Header: FC<HeaderProps> = ({ logo }: HeaderProps) => {
   return (
     <S.Header>
-      <S.Logo src={darkLogo} alt={'justfind.pl'} />
+      <S.Logo src={logo} alt={'justfind.pl'} />
       {navLinks.map((navLink) => (
         <NavLink key={uuid()} {...navLink} />
       ))}
@@ -17,4 +17,4 @@ const Header: FC = () => {
   );
 };
 
-export default Header;
+export default React.memo(Header);

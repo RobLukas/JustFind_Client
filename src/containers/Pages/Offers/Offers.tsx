@@ -1,10 +1,7 @@
-import offers from 'api/offers';
-import { Header } from 'components';
-import Filters from 'containers/Filters/Filters';
-import Map from 'containers/Map/Map';
-import OffersList from 'containers/OffersList/OffersList';
-
 import React, { FC } from 'react';
+
+import { Header, Filters, Map, OffersList } from 'containers';
+import offers from 'api/offers';
 
 const Offers: FC = () => {
   return (

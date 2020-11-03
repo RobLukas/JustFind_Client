@@ -2,17 +2,13 @@ import React, { FC, useCallback } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { SwitchModeButton } from 'components/common';
-import { switchMode } from 'features/ThemeMode/themeModeSlice';
-import { RootState } from 'redux/store';
-import { createSelector } from '@reduxjs/toolkit';
-
-const selectThemeMode = createSelector(
-  (state: RootState) => state.themeMode,
-  (themeMode) => themeMode.isDarkMode,
-);
+import {
+  selectIsDarkMode,
+  switchMode,
+} from 'features/ThemeMode/themeModeSlice';
 
 const SwitchMode: FC = () => {
-  const isDarkMode = useSelector(selectThemeMode);
+  const isDarkMode = useSelector(selectIsDarkMode);
   const dispatch = useDispatch();
 
   const handleSwitchMode = useCallback(() => {

@@ -3,16 +3,16 @@ import 'leaflet/dist/leaflet.css';
 import { TileLayer } from 'react-leaflet';
 import { LatLngTuple } from 'leaflet';
 import { v4 as uuid } from 'uuid';
-import { RootState } from 'redux/store';
 import { useSelector } from 'react-redux';
 
 import S from './Map.styles';
 import { MarkerMap } from 'components';
 import { darkModeMap, lightModeMap } from 'styles/theme/mapMode';
+import { selectIsDarkMode } from 'features/ThemeMode/themeModeSlice';
 import offers from 'api/offers';
 
 const Map: FC = () => {
-  const { isDarkMode } = useSelector((state: RootState) => state.themeMode);
+  const isDarkMode = useSelector(selectIsDarkMode);
   const themeModeMap = isDarkMode ? darkModeMap : lightModeMap;
 
   const position: LatLngTuple = [51.9189046, 19.1343786];

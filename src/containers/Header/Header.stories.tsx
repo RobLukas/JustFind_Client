@@ -1,9 +1,9 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react/types-6-0';
-import Header from './Header';
+import { Header } from 'containers';
 
 export default {
-  title: 'components/Header',
+  title: 'containers/Header',
   component: Header,
 } as Meta;
 

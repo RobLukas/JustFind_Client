@@ -1,5 +1,4 @@
 import React, { FC } from 'react';
-import { RootState } from 'redux/store';
 import { useSelector } from 'react-redux';
 import { ThemeProvider as MuiThemeProvider } from '@material-ui/core/styles';
 
@@ -9,11 +8,12 @@ import { ThemeProvider } from 'styled-components';
 import darkMode from 'styles/theme/darkMode';
 import ThemeWrapperProps from './ThemeWrapper.interface';
 import lightMode from 'styles/theme/lightMode';
+import { selectIsDarkMode } from 'features/ThemeMode/themeModeSlice';
 
 const ThemeWrapper: FC<ThemeWrapperProps> = ({
   children,
 }: ThemeWrapperProps) => {
-  const { isDarkMode } = useSelector((state: RootState) => state.themeMode);
+  const isDarkMode = useSelector(selectIsDarkMode);
   const themeMode = isDarkMode ? darkMode : lightMode;
 
   return (
