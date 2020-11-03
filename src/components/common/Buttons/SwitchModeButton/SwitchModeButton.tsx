@@ -23,4 +23,4 @@ const SwitchModeButton: FC<SwitchModeButtonProps> = ({
   );
 };
 
-export default SwitchModeButton;
+export default React.memo(SwitchModeButton);
